@@ -1,0 +1,26 @@
+[project]
+name = "perrosanxe"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "adrianvillanueva997", email = "adrianvillanueva997@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "ollama>=0.6.1",
+    "python-telegram-bot>=22.6",
+]
+
+[project.scripts]
+perrosanxe = "perrosanxe:main"
+
+[build-system]
+requires = ["uv_build>=0.9.20,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.5",
+    "ty>=0.0.21",
+]
